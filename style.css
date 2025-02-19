@@ -4,6 +4,8 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            padding-top: 50px; /* Adjust this value based on the height of your menu bar */
+
         }
 
         /* Navigation Bar */

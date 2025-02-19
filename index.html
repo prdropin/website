@@ -132,6 +132,40 @@
                 font-size: 14px;
             }
         }
+            /* Calendar Section Styles */
+    #calendar-section {
+        background-color: #f9f9f9;
+        padding: 40px;
+        text-align: center;
+    }
+
+    #calendar-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    #calendar-section button {
+        background-color: #333;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: background-color 0.3s;
+    }
+
+    #calendar-section button:hover {
+        background-color: #555;
+    }
+
+    /* Ensure buttons are responsive and look great on mobile */
+    @media (max-width: 600px) {
+        #calendar-section button {
+            padding: 12px 25px;
+            font-size: 1em;
+        }
+    }
     </style>
 </head>
 <body>

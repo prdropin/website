@@ -33,7 +33,7 @@
             background-image: url('images/Shelf with Toys.jpg');
             background-size: cover;
             background-position: center;
-            height: 300px;
+            height: 300px; /* Adjust the height as needed */
             color: white;
             text-align: center;
             display: flex;
@@ -42,12 +42,6 @@
             flex-direction: column;
             position: relative;
             z-index: 1;
-        }
-
-        .header .overlay {
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            padding: 20px;
-            border-radius: 8px;
         }
 
         .header h1 {
@@ -84,18 +78,12 @@
         .gallery div {
             margin: 5px;
             width: calc(33% - 10px);
-            cursor: pointer;
         }
 
         .gallery img {
             width: 100%;
             height: auto;
             border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
         }
 
         /* Testimonials Section */
@@ -144,41 +132,40 @@
                 font-size: 14px;
             }
         }
+            /* Calendar Section Styles */
+    #calendar-section {
+        background-color: #f9f9f9;
+        padding: 40px;
+        text-align: center;
+    }
 
-        /* Calendar Section Styles */
-        #calendar-section {
-            background-color: #f9f9f9;
-            padding: 40px;
-            text-align: center;
-        }
+    #calendar-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
 
-        #calendar-section h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+    #calendar-section button {
+        background-color: #333;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: background-color 0.3s;
+    }
 
+    #calendar-section button:hover {
+        background-color: #555;
+    }
+
+    /* Ensure buttons are responsive and look great on mobile */
+    @media (max-width: 600px) {
         #calendar-section button {
-            background-color: #333;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
+            padding: 12px 25px;
+            font-size: 1em;
         }
-
-        #calendar-section button:hover {
-            background-color: #555;
-        }
-
-        /* Ensure buttons are responsive and look great on mobile */
-        @media (max-width: 600px) {
-            #calendar-section button {
-                padding: 12px 25px;
-                font-size: 1em;
-            }
-        }
+    }
     </style>
 </head>
 <body>
@@ -195,18 +182,15 @@
 
 <!-- Header Image Section -->
 <div class="header">
-    <div class="overlay">
-        <h1>Parent Resources EarlyON Child and Family Centre</h1>
-        <p>Supporting Families, Nurturing Growth</p>
-    </div>
+    <h1>Parent Resources EarlyON Child and Family Centre</h1>
+    <p>Supporting Families, Nurturing Growth</p>
 </div>
 
 <!-- About Section -->
 <section id="about">
     <h2>Mission Statement</h2>
-    <p>Parent Resources EarlyON Child and Family Centre exists to promote healthy child development, improve child and family well-being, and enhance community connectedness and belonging for children, parents, and caregivers in East Toronto...</p>
+    <p>Parent Resources EarlyON Child and Family Centre exists to promote healthy child development, improve child and family well-being, and enhance community connectedness and belonging for children, parents, and caregivers in East Toronto. We create safe and welcoming spaces that offer children, parents, and caregivers supportive conditions and tangible resources to reduce isolation and encourage growth, learning, and long-term success. Offering free services to all families, we provide opportunities for children from birth to 6 years of age to participate in play and inquiry–based programs, and support parents and caregivers in their roles through counseling, workshops, and outreach.</p>
 </section>
-
 <!-- Calendar Section -->
 <section id="calendar-section">
     <h2>Download This Month's Calendar of Events</h2>
@@ -234,10 +218,21 @@
 <section id="gallery">
     <h2 class="w3-center">Gallery</h2>
     <div class="gallery">
-        <div><a href="images/Canopy Play Area.jpg" target="_blank"><img src="images/Canopy Play Area.jpg" alt="Canopy Play Area"></a></div>
-        <div><a href="images/child playing outside.jpg" target="_blank"><img src="images/child playing outside.jpg" alt="Child playing outside"></a></div>
-        <div><a href="images/circle time desk.jpg" target="_blank"><img src="images/circle time desk.jpg" alt="Circle time desk"></a></div>
-        <!-- Repeat for all other images -->
+        <div><img src="images/Canopy Play Area.jpg" alt="Canopy Play Area"></div>
+        <div><img src="images/child playing outside.jpg" alt="Child playing outside"></div>
+        <div><img src="images/circle time desk.jpg" alt="Circle time desk"></div>
+        <div><img src="images/circle time pay area.jpg" alt="Circle time play area"></div>
+        <div><img src="images/Entrance into Parent Resources.jpg" alt="Entrance into Parent Resources"></div>
+        <div><img src="images/Inside Main Area Picture 1.jpg" alt="Inside Main Area Picture 1"></div>
+        <div><img src="images/Inside Main Area slide and Tube.jpg" alt="Inside Main Area slide and Tube"></div>
+        <div><img src="images/Inside Main Area Slide.jpg" alt="Inside Main Area Slide"></div>
+        <div><img src="images/kid playin with tools.jpg" alt="kid playin with tools"></div>
+        <div><img src="images/kids playing with play dough.jpg" alt="kids playing with play dough"></div>
+        <div><img src="images/kids sticking something on board.jpg" alt="kids sticking something on board"></div>
+        <div><img src="images/Outside play area.jpeg" alt="Outside play area"></div>
+        <div><img src="images/Shelf with Toys and Main Stage.jpg" alt="Shelf with Toys and Main Stage"></div>
+        <div><img src="images/Shelf with Toys.jpg" alt="Shelf with Toys"></div>
+
     </div>
 </section>
 
@@ -250,7 +245,11 @@
 <!-- History Section -->
 <section id="history">
     <h2>History of Parent Resources EarlyON CFC</h2>
-    <p>Parent Resources EarlyON CFC Child and Family Centre has supported East Toronto families since May 1977...</p>
+    <p>Parent Resources EarlyON CFC Child and Family Centre has supported East Toronto families since May 1977, when it opened in Regent Park to address the need for early childhood education, parenting support, and community connection. The Centre’s mission was, and still is, to promote healthy child development, improve family well-being, and foster strong community ties through free play-based learning and resources for caregivers.</p>
+    <p>In 1996, the Centre relocated to the basement of the United Church at 1117 Gerrard Street East, expanding its services to include workshops, informal counselling, and outreach. The new space helped further the Centre’s goal of reducing isolation, improving self-esteem, and providing a safe environment where children and families could thrive. Over two decades, it became a vital support system, offering parents tools to nurture their children’s development.</p>
+    <p>In 2001 Parent Resources EarlyON CFC expanded its satellite services to the Regent Park neighbourhood; then, to St. Lawrence North Market in 2005. Because of the demolishment of the North Market, the satellite site moved to its present place at 173A Front Street in 2010.</p>
+    <p>In 2018, when the Main Site on Gerrard’s building was sold to WoodGreen Community Services, Parent Resources EarlyON CFC adapted into a mobile program, continuing to deliver its essential services throughout East Toronto. Even without a permanent home, the Centre remained a key resource for families, providing opportunities for growth, learning, and community engagement.</p>
+    <p>By 2022, Parent Resources EarlyON CFC returned to its beautifully renovated space at 1117 Gerrard Street East, now part of a senior residence. Today, the Centre continues its longstanding mission of supporting children, parents, and caregivers by offering a welcoming space to connect, play, and learn, ensuring all families in East Toronto have the resources they need to succeed.</p>
 </section>
 
 <!-- Footer -->

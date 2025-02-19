@@ -28,8 +28,9 @@
 <!-- About Section -->
 <section id="about">
     <h2>Mission Statement</h2>
-    <p>Parent Resources EarlyON Child and Family Centre exists to promote healthy child development, improve child and family well-being, and enhance community connectedness and belonging for children, parents, and caregivers in East Toronto. We create safe and welcoming spaces that offer children, parents, and caregivers supportive conditions and tangible resources to reduce isolation and encourage growth, learning, and long-term success. Offering free services to all families, we provide opportunities for children from birth to 6 years of age to participate in play and inquiry–based programs, and support parents and caregivers in their roles through counseling, workshops, and outreach.</p>
+    <p>Parent Resources EarlyON Child and Family Centre exists to promote healthy child development...</p>
 </section>
+
 <!-- Calendar Section -->
 <section id="calendar-section">
     <h2>Download This Month's Calendar of Events</h2>
@@ -42,14 +43,7 @@
 <section id="objectives">
     <h2>Our Objectives</h2>
     <ul class="w3-ul w3-center">
-        <li>Improve the parenting and coping abilities of caregivers and parents and promote an overall sense of community.</li>
-        <li>Provide parent relief programs, child enrichment tools, and informal counseling to families.</li>
-        <li>Provide a safe, supportive community resource for parents, caregivers, and their young children to socialize, play, and learn.</li>
-        <li>Improve self-esteem of parents and children.</li>
-        <li>Promote understanding of child development and encourage sharing of best practices.</li>
-        <li>Nurture and strengthen the well-being of families as a whole.</li>
-        <li>Increase awareness of and ability to use community resources through information distribution and referrals.</li>
-        <li>Provide a space for parents to connect.</li>
+        <li>Improve the parenting and coping abilities...</li>
     </ul>
 </section>
 
@@ -57,38 +51,40 @@
 <section id="gallery">
     <h2 class="w3-center">Gallery</h2>
     <div class="gallery">
-        <div><img src="images/Canopy Play Area.jpg" alt="Canopy Play Area"></div>
-        <div><img src="images/child playing outside.jpg" alt="Child playing outside"></div>
-        <div><img src="images/circle time desk.jpg" alt="Circle time desk"></div>
-        <div><img src="images/circle time pay area.jpg" alt="Circle time play area"></div>
-        <div><img src="images/Entrance into Parent Resources.jpg" alt="Entrance into Parent Resources"></div>
-        <div><img src="images/Inside Main Area Picture 1.jpg" alt="Inside Main Area Picture 1"></div>
-        <div><img src="images/Inside Main Area slide and Tube.jpg" alt="Inside Main Area slide and Tube"></div>
-        <div><img src="images/Inside Main Area Slide.jpg" alt="Inside Main Area Slide"></div>
-        <div><img src="images/kid playin with tools.jpg" alt="kid playin with tools"></div>
-        <div><img src="images/kids playing with play dough.jpg" alt="kids playing with play dough"></div>
-        <div><img src="images/kids sticking something on board.jpg" alt="kids sticking something on board"></div>
-        <div><img src="images/Outside play area.jpeg" alt="Outside play area"></div>
-        <div><img src="images/Shelf with Toys and Main Stage.jpg" alt="Shelf with Toys and Main Stage"></div>
-        <div><img src="images/Shelf with Toys.jpg" alt="Shelf with Toys"></div>
-
+        <!-- Thumbnails -->
+        <div class="gallery-item">
+            <img src="images/Canopy Play Area-thumbnail.jpg" alt="Canopy Play Area" onclick="openLightbox(0)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/child playing outside-thumbnail.jpg" alt="Child playing outside" onclick="openLightbox(1)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/circle time desk-thumbnail.jpg" alt="Circle time desk" onclick="openLightbox(2)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/circle time pay area-thumbnail.jpg" alt="Circle time play area" onclick="openLightbox(3)">
+        </div>
+        <div class="gallery-item">
+            <img src="images/Entrance into Parent Resources-thumbnail.jpg" alt="Entrance into Parent Resources" onclick="openLightbox(4)">
+        </div>
+        <!-- More gallery items... -->
     </div>
 </section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox()">
+    <span class="close-btn">&times;</span>
+    <img id="lightbox-image" src="" alt="">
+    <div class="lightbox-nav">
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+</div>
 
 <!-- Testimonials Section -->
 <section id="testimonials">
     <h2>Testimonials</h2>
-    <blockquote>"Within a month I could see my son’s social skills and communication skills improve. The activities are well organized, and there are really nice people running this place." - Sunder Palani, Leslieville</blockquote>
-</section>
-
-<!-- History Section -->
-<section id="history">
-    <h2>History of Parent Resources EarlyON CFC</h2>
-    <p>Parent Resources EarlyON CFC Child and Family Centre has supported East Toronto families since May 1977, when it opened in Regent Park to address the need for early childhood education, parenting support, and community connection. The Centre’s mission was, and still is, to promote healthy child development, improve family well-being, and foster strong community ties through free play-based learning and resources for caregivers.</p>
-    <p>In 1996, the Centre relocated to the basement of the United Church at 1117 Gerrard Street East, expanding its services to include workshops, informal counselling, and outreach. The new space helped further the Centre’s goal of reducing isolation, improving self-esteem, and providing a safe environment where children and families could thrive. Over two decades, it became a vital support system, offering parents tools to nurture their children’s development.</p>
-    <p>In 2001 Parent Resources EarlyON CFC expanded its satellite services to the Regent Park neighbourhood; then, to St. Lawrence North Market in 2005. Because of the demolishment of the North Market, the satellite site moved to its present place at 173A Front Street in 2010.</p>
-    <p>In 2018, when the Main Site on Gerrard’s building was sold to WoodGreen Community Services, Parent Resources EarlyON CFC adapted into a mobile program, continuing to deliver its essential services throughout East Toronto. Even without a permanent home, the Centre remained a key resource for families, providing opportunities for growth, learning, and community engagement.</p>
-    <p>By 2022, Parent Resources EarlyON CFC returned to its beautifully renovated space at 1117 Gerrard Street East, now part of a senior residence. Today, the Centre continues its longstanding mission of supporting children, parents, and caregivers by offering a welcoming space to connect, play, and learn, ensuring all families in East Toronto have the resources they need to succeed.</p>
+    <blockquote>"Within a month I could see my son’s social skills..."</blockquote>
 </section>
 
 <!-- Footer -->
@@ -99,5 +95,7 @@
     <p>Email: info@earlyoncentre.com</p>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
+``

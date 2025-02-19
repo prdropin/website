@@ -10,6 +10,8 @@
         .w3-bar {
             background-color: #333;
             color: white;
+            z-index: 1000; /* Ensures it stays above other content */
+
         }
 
         .w3-bar .w3-button {

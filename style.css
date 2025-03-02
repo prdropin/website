@@ -170,3 +170,10 @@
             font-size: 1em;
         }
     }
+/* Make the navigation bar sticky */
+.w3-bar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures the menu stays on top of other content */
+}

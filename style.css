@@ -128,6 +128,14 @@
                 font-size: 14px;
             }
         }
+
+
+            /* schedule Section Styles */
+    #schedule-section {
+        background-color: #f9f9f9;
+        padding: 40px;
+        text-align: center;
+    }
             /* Calendar Section Styles */
     #calendar-section {
         background-color: #f9f9f9;
